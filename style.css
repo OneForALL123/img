@@ -1,0 +1,49 @@
+body {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide-show {
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.list-images {
+    display: flex;
+   transition: 0.5s;
+}
+.btn:hover {
+    color: white;
+}
+.btn {
+    font-size: 45px;
+    color: #999;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.btn-left {
+    left: 0;
+}
+.btn-right {
+    right: 0;
+}
+.index-images {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.index-item {
+    border: 2px solid #999;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 50%;
+}
+.active {
+    background-color: #999;
+}
